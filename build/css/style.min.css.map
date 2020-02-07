@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,I,CACE,kB,CAGF,E,CACE,W","file":"style.min.css","sourcesContent":["body{\n  background-color: green($color: #000000);\n}\n\nh2 {\n  color: green;\n}\n"]}
