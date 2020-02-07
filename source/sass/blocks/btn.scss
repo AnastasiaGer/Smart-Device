@@ -1,0 +1,50 @@
+/**
+  * ===========================================================
+  * btn SECTION
+  * ===========================================================
+  */
+.btn {
+  display: inline-block;
+  padding: 17px 30px 15px 30px;
+
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: normal;
+
+  background-color: #81b3d2;
+
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+
+    background-color: #e5e5e5;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #e5e5e5;
+    }
+  }
+}
