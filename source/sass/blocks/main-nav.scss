@@ -4,19 +4,18 @@
   * ===========================================================
 */
 
-@media (min-width: $desktop-max-width) {
-  .main-nav__item {
-    width: 239px;
+.main-nav__item {
+  width: 239px;
 
-    &:nth-child(2n + 2) {
-      margin-right: 243px;
-    }
+  &:nth-child(2n + 2) {
+    margin-right: 243px;
+  }
 
-    &:nth-child(4) {
-      margin-right: 0;
-    }
+  &:nth-child(4) {
+    margin-right: 0;
   }
 }
+
 
 /**
     * ===========================================================
@@ -107,108 +106,109 @@
   * MAIN NAVIGATION mobile
   * ===========================================================
 */
-.main-nav,
-.main-nav--opened {
-  min-height: 279px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0;
-  padding: 0;
+@media (min-width: $mobile-max-width) {
 
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #ffffff;
-}
+  .main-nav,
+  .main-nav--opened {
+    min-height: 279px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
 
-.main-nav__toggle {
-  position: absolute;
-  display: block;
-  top: 7px;
-  right: 7px;
-  width: 50px;
-  height: 40px;
-  font-size: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.main-nav--closed {
-  min-height: 56px;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/icon-menu.svg");
-  background-repeat: no-repeat;
-}
-
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/icon-cross.svg");
-  background-repeat: no-repeat;
-}
-
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav__list {
-    display: none;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ffffff;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__list {
+  .main-nav__toggle {
+    position: absolute;
     display: block;
-  }
-}
-
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.main-nav__link {
-  display: block;
-  padding: 8px 20px 6px 20px;
-
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-
-  color: #ffffff;
-  background-color: #81b3d2;
-
-  border-top: 1px solid #678fa8;
-  border-bottom: 1px solid #9ac2db;
-
-  &[href]:hover {
-    background-color: #669ec0;
+    top: 7px;
+    right: 7px;
+    width: 50px;
+    height: 40px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
   }
 
-  &[href]:active {
-    background-color: #5496bd;
-    color: #88b6d1;
+  .main-nav--closed {
+    min-height: 56px;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-nav--opened .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    .main-nav--closed .main-nav__list {
+      display: none;
+    }
+
+    .main-nav--nojs .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav--nojs .main-nav__list {
+      display: block;
+    }
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  .main-nav__link {
+    display: block;
+    padding: 8px 20px 6px 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
+
+    color: #ffffff;
+    background-color: #81b3d2;
+
+    border-top: 1px solid #678fa8;
+    border-bottom: 1px solid #9ac2db;
+
+    &[href]:hover {
+      background-color: #669ec0;
+      cursor: pointer;
+    }
+
+    &[href]:active {
+      background-color: #5496bd;
+      color: #88b6d1;
+      cursor: pointer;
+    }
   }
 }
-
-
