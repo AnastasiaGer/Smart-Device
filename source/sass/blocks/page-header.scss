@@ -1,90 +1,83 @@
 /**
   * ===========================================================
-  * PAGE HEADER desktop
+  * PAGE HEADER
   * ===========================================================
 */
-
 .page-header {
-  width: 1024px;
-
   margin: 0 auto;
-
-  background-color: #1b2d37;
+  padding: 0;
+  display: flex;
+  background-color:#1b2931;
 }
 
-.page-header__top-logo {
+.page-header__logo {
+  height: 0;
+  position: relative;
+}
+
+.page-header__img {
   position: absolute;
 
-  top: -57px;
-  left: 50%;
+  top: 0;
+  left: 0;
 
-  margin-left: -94px;
-
-  width: 187px;
-  height: 96px;
-
-  z-index: 100;
+  width: 201px;
+  height: 52px;
+}
+.page-header__title {
+  color: #ffffff;
+  font-family:  "Roboto Condensed", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
 }
 
+.page-header__tip {
+  color: #788891;
+  font-family:  "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 /**
   * ===========================================================
   * PAGE HEADER tablet
   * ===========================================================
 */
-
-@media (min-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
   .page-header {
-    width: $tablet-max-width;
-
     margin: 0 auto;
   }
 
-  .page-header__top-logo {
+  .page-header__img {
     position: absolute;
 
-    top: -57px;
-    left: 50%;
-
-    margin-left: -51px;
-
-    width: 102px;
-    height: 84px;
-
-    z-index: 100;
+    top: 0;
+    left: 0;
   }
 }
-
-
 /**
   * ===========================================================
   * PAGE HEADER mobile
   * ===========================================================
 */
-@media (min-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
   .page-header {
-    width: 320px;
-
     margin: 0 auto;
     padding: 0;
   }
 
-  .page-header__logo {
-    height: 0;
-    position: relative;
-  }
-
-  .page-header__top-logo {
+  .page-header__img{
     position: absolute;
 
-    top: -57px;
-    left: 50%;
+    top: 0;
+    left: 0;
+  }
 
-    margin-left: -51px;
+  .page-header__title {
+    display: none;
+  }
 
-    width: 102px;
-    height: 83px;
-
-    z-index: 100;
+  .page-header__tip {
+    display: none;
   }
 }

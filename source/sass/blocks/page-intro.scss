@@ -1,0 +1,138 @@
+/**
+* ===========================================================
+* PAGE INTRO desktop
+* ===========================================================
+*/
+.page-intro-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color:#1b2931;
+}
+
+.page-intro {
+  width: 1200px;
+  height: 532px;
+  position: relative;
+  margin: 0 auto;
+  background-color:#1b2931;
+}
+
+.page-intro__banner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background-image: url("../img/bg1.svg"), url("../img/bg2.jpg");
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain, cover;
+}
+
+.page-intro__header {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 5.6px;
+  text-transform: uppercase;
+}
+
+.page-intro__tip {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'PT Mono', monospace;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36.09px;
+}
+
+.btn-intro {
+  border-radius: 5px;
+  background-color: #00b2ff;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.page-intro__scroll {
+  transform: rotate(90deg);
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: 'PT Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/**
+* ===========================================================
+* PAGE INTRO tablet
+ * ===========================================================
+*/
+@media (min-width: $tablet-max-width) {
+  .page-intro__banner {
+    position: absolute;
+  top: 10px;
+  right: 10px;
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
+  }
+
+  .page-intro__header {
+    margin: 0;
+    transform: none;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4.2px;
+  }
+
+  .page-intro__tip {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28.22px;
+  }
+
+  .page-intro__scroll {
+    display: none;
+  }
+}
+
+/**
+ * ===========================================================
+* PAGE INTRO mobile
+* ===========================================================
+*/
+@media (max-width: $mobile-max-width) {
+  .page-intro__banner {
+    position: absolute;
+  top: 10px;
+  right: 10px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
+  }
+
+  .page-intro__header {
+    margin: 0;
+    transform: none;
+    font-size: 40px;
+    letter-spacing: 2.8px;
+  }
+
+  .page-intro__tip {
+    margin: 0;
+    font-size: 16px;
+    line-height: 25.09px;
+  }
+
+  .page-intro__scroll {
+    display: none;
+  }
+}

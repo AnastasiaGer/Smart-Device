@@ -1,50 +1,32 @@
-/**
-  * ===========================================================
-  * btn SECTION
-  * ===========================================================
-  */
-.btn {
-  display: inline-block;
-  padding: 17px 30px 15px 30px;
-
+.btn
+{
   color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-
-  text-align: center;
+  font-family:  "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
-  text-decoration: none;
-  white-space: normal;
 
-  background-color: #81b3d2;
+    padding: 10px 22px 12px 21px;
 
-  box-shadow: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: none;
 
-  &:hover {
-    background-color: #669ec0;
-  }
+    border: none;
+    border-radius: 50px;
+    background-color:#1b2931;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
 
-  &:active {
-    color: #88b6d1;
-    background-color: #5496bd;
-  }
+.btn:hover
+{
+  background-color: #00b2ff;
+}
 
-  &:disabled {
-
-    background-color: #e5e5e5;
-
-    &:hover {
-      background-color: #e5e5e5;
-    }
-
-    &:active {
-      color: #ffffff;
-      background-color: #e5e5e5;
-    }
-  }
+.btn:active
+{
+  background-color: #003e59;
 }

@@ -17,62 +17,42 @@
   <div class="page-wrapper">
 
     <header class="page-header">
+      <div class="main-nav-wrapper">
+        <nav class="main-nav">
 
-      <nav class="main-nav">
+          <div class="page-header__logo">
+            <img class="page-header__img" src="img/logo.svg" alt="Smart-Device" width="201" height="52">
+            <h1 class="page-header__title">Smart Device</h1>
+            <p class="page-header__tip">умные технологии</p>
+          </div>
 
-        <div class="page-header__logo">
-          <img class="page-header__top-logo" src="img/logo-big.png" alt="Smart-Device" width="215" height="52">
-        </div>
-
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">info@sd.ru</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">+7 (495) 000 52 52</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link call-back " href="#">
-              <span>Заказать звонок</span>
-            </a>
-
-            <section class="modal-dialog">
-              <h2>Закажите звонок</h2>
-              <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-              <form class="call-back-form" action="#" method="post">
-                <input type="text" name="name" id="user-first-name" class="call-back-name colortext" placeholder="Имя" aria-label="Имя" required="">
-                <input type="text" name="phone" id="phone" class="call-back-phone colortext" placeholder="Телефон" aria-label="Телефон" required="">
-                <textarea id="call-back" class="call-back-message" aria-label="Ваш вопрос" name="message" placeholder="Ваш вопрос"></textarea>
-
-                <button class="button" type="submit">Отправить</button>
-
-                <div class="checkbox-area">
-                  <label>
-                    <input type="checkbox" name="consent">
-                    Я согласен на обработку персональных данных
-                  </label>
-                </div>
-              </form>
-            </section>
-
-          </li>
-        </ul>
-      </nav>
-
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--mail" href="#">info@sd.ru</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--phone" href="#">+7 (495) 000 52 52</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link btn btn-contacts call-back " href="#">Заказать звонок</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-content">
-      <section class="page-content__banner">
-        <img class="page-content__banner-big" src="img/banner.png" width="1920" height="950" alt="Smart-Device">
-      </section>
-
-      <section class="page-intro  page-intro--decorated">
-        <h2 class="page-intro__header">Печатные платы</h2>
-        <p class="page-intro__content">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button" href="#">
-          <span>Получить бесплатную консультацию</span>
-        </a>
-      </section>
+      <div class="page-intro-wrapper">
+        <section class="page-intro">
+          <img class="page-intro__banner" src="img/banner.png" width="705" height="515" alt="Smart-Device">
+          <h2 class="page-intro__header">Печатные платы</h2>
+          <p class="page-intro__tip">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="btn btn-intro" href="#">
+            <span>Получить бесплатную консультацию</span>
+          </a>
+          <span class="page-intro__scroll">Скролл вниз</span>
+        </section>
+      </div>
 
       <section class="advantages">
         <ul class="advantages__list">
@@ -119,10 +99,11 @@
           <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
             1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
           <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+            (РЖД),
             РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
             светотехники России.</p>
-          <img src="img/image-2005.jpg" alt="????" width="222" height="319">
+          <img src="img/image-2005.png" alt="????" width="222" height="319">
         </div>
       </section>
 
@@ -172,7 +153,7 @@
     <footer class="page-footer">
       <div class="footer-top">
         <div class="footer-logo">
-          <img src="img/logo-footer.png" alt="The Great Keksby" width="215" height="52">
+          <img src="img/logo.svg" alt="Smart-Device" width="201" height="52">
         </div>
 
         <div class="page-footer__social">
@@ -225,6 +206,25 @@
     </div></div></footer>
 
   </div>
+
+  <section class="modal-dialog">
+    <h2>Закажите звонок</h2>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <form class="call-back-form" action="#" method="post">
+      <input type="text" name="name" id="user-first-name" class="call-back-name colortext" placeholder="Имя" aria-label="Имя" required="">
+      <input type="text" name="phone" id="phone" class="call-back-phone colortext" placeholder="Телефон" aria-label="Телефон" required="">
+      <textarea id="call-back" class="call-back-message" aria-label="Ваш вопрос" name="message" placeholder="Ваш вопрос"></textarea>
+
+      <button class="button" type="submit">Отправить</button>
+
+      <div class="checkbox-area">
+        <label>
+          <input type="checkbox" name="consent">
+          Я согласен на обработку персональных данных
+        </label>
+      </div>
+    </form>
+  </section>
   <div class="modal modal-overlay"></div>
   <!-- <script src="js/script.min.js"></script>-->
 </body>

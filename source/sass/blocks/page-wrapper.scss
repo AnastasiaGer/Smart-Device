@@ -1,17 +1,12 @@
+.page-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
 
+@media (max-width: $tablet-max-width) {
   .page-wrapper {
-    max-width: 100%;
-    width: 1024px;
-    margin: 0 auto;
-
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-  }
-
-
-@media (min-width: $tablet-max-width) {
-  .page-wrapper {
-    max-width: 100%;
-    width: 768px;
+    width: 100%;
     overflow: hidden;
     margin: 0 auto;
 
@@ -19,18 +14,12 @@
   }
 }
 
-@media (min-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
   .page-wrapper {
-    max-width: 100%;
-    width: 320px;
+    width: 100%;
     overflow: hidden;
     margin: 0 auto;
 
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
-
-
-
-
-
