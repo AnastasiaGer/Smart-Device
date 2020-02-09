@@ -1,0 +1,74 @@
+/**
+* ===========================================================
+* ABOUT desktop
+* ===========================================================
+*/
+.about-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.about {
+  width: 1200px;
+  height: 532px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  color: #666666;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.63px;
+}
+
+.about__container {
+  margin-left: 200px;
+}
+
+.about-tip {
+  color: #666666;
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.about-btn {
+  color: #00b2ff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #00b2ff;
+}
+
+.about-img {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 116px;
+   height: 305px;
+}
+/**
+* ===========================================================
+* ABOUT tablet
+ * ===========================================================
+*/
+@media (min-width: $tablet-max-width) {}
+
+/**
+ * ===========================================================
+* ABOUT mobile
+* ===========================================================
+*/
+@media (max-width: $mobile-max-width) {}

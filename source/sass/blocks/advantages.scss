@@ -1,0 +1,151 @@
+/**
+* ===========================================================
+* ADVANTAGES desktop
+* ===========================================================
+*/
+.advantages-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+margin-bottom: 40px;
+color: #323232;
+padding: 25px 20px 0 22px;
+  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+   flex-wrap: wrap;
+}
+
+.advantages__list.advantages__item :nth-child(2n + 1)
+{
+    margin-right: 20px;
+}
+
+.advantages__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+
+  position: relative;
+
+  width: 488px;
+  margin-left: 55px;
+
+  list-style: none;
+  border: 1px solid #ebebeb;
+  border-left: 2px solid #00b2ff;
+}
+
+.advantages__item :nth-child(2n + 2) p
+{
+    margin-left: 7px;
+}
+
+.advantages__item:hover {
+  background-color: #00b2ff;
+  color: #ffffff;
+}
+
+.advantages__item-header {
+  color: #00b2ff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.75px;
+}
+
+.advantages__item-header--deadlines::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 35px;
+
+  top: 25px;
+  left: 21px;
+
+  background-image: url("../img/icon-clock.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item-header--suppliers::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+
+  top: 25px;
+  left: 21px;
+
+  background-image: url("../img/icon-people.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item-header--privacy::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 31px;
+
+  top: 25px;
+  left: 21px;
+
+  background-image: url("../img/icon-hat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item-header--customization::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+
+  top: 25px;
+  left: 21px;
+
+  background-image: url("../img/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item-content {
+  color: #666666;
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+/**
+* ===========================================================
+* ADVANTAGES tablet
+ * ===========================================================
+*/
+@media (min-width: $tablet-max-width) {
+
+}
+
+/**
+ * ===========================================================
+* ADVANTAGES mobile
+* ===========================================================
+*/
+@media (max-width: $mobile-max-width) {
+
+}

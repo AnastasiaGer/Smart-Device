@@ -1,0 +1,160 @@
+/**
+* ===========================================================
+* SERVICES desktop
+* ===========================================================
+*/
+.services-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #1b2d37;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 40px;
+  color: #323232;
+  padding: 25px 20px 0 22px;
+  background-color: #1b2d37;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.services-header {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.63px;
+}
+
+.services__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.services__list .services__item :nth-child(3n + 1) {
+  margin-right: 20px;
+}
+
+.services__item {
+  box-sizing: border-box;
+  width: 25%;
+  height: 620px;
+  margin-right: 25px;
+  padding: 21px 22px;
+
+  list-style: none;
+
+  color: #fff;
+  background-color: #1b2d37;
+
+  flex-grow: 1;
+  position: relative;
+}
+.services__item__link img{
+  filter: opacity(30%)
+}
+
+.services__item__link {
+  display: inline-block;
+  margin-bottom: -8px;
+
+
+  &:focus {
+    border: 0.5px dashed #81b3d2;
+  }
+}
+
+.services__item {
+  & img {
+    display: block;
+  }
+}
+
+.services__item-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  padding-top: 16px;
+}
+
+.services__item-header {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.services__item-info a {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+.btn-services {
+  position: relative;
+
+  display: inline-block;
+
+  margin: 0 3px;
+  padding: 0;
+  width: 63px;
+  height: 63px;
+  background-color: #00b2ff;
+
+  font-size: 0;
+
+  border: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .btn-services-icon {
+    fill: #88b6d1;
+  }
+
+}
+
+.btn-services-icon {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  transform: rotate(180deg);
+  margin-top: -9px;
+  margin-left: -9px;
+
+  fill: #ffffff;
+
+}
+
+/**
+* ===========================================================
+* SERVICES tablet
+ * ===========================================================
+*/
+@media (min-width: $tablet-max-width) {}
+
+/**
+ * ===========================================================
+* SERVICES mobile
+* ===========================================================
+*/
+@media (max-width: $mobile-max-width) {}
