@@ -33,11 +33,26 @@
 .about__container {
   width: 984px;
   margin-left: 340px;
+  position: relative;
+}
+
+.about__container::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: -175px;
+  width: 116px;
+  height: 305px;
+  background-image: url("../img/image-2005.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: 100;
 }
 
 .about-tip {
   margin: 0;
-    margin-top: 18px;
+  margin-top: 18px;
   color: #666666;
   font-family: 'PT Mono', monospace;
   font-size: 16px;
@@ -47,8 +62,8 @@
 
 .about-btn {
   margin-top: 38px;
-    display: inline-block;
-    padding: 10px 50px 11px 49px;
+  display: inline-block;
+  padding: 10px 50px 11px 49px;
   color: #00b2ff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -68,13 +83,6 @@
   }
 }
 
-.about-img {
-  position: absolute;
-  top: 41px;
-    left: 162px;
-  width: 116px;
-   height: 305px;
-}
 /**
 * ===========================================================
 * ABOUT tablet

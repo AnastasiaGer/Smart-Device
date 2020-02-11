@@ -25,6 +25,8 @@ background-position: center;
   position: absolute;
   top: 138px;
     right: -40px;
+    width: 705px;
+height: 515px;
 }
 
 .page-intro__header {
@@ -101,7 +103,7 @@ height: 2px;
 */
 @media (min-width: $tablet-max-width) {
   .page-intro__scroll {
-    display: none;
+    /*display: none;*/
   }
 }
 

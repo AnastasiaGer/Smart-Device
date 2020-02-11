@@ -30,12 +30,20 @@
     padding-left: 16px;
 }
 
-.recall-form img {
-  position: absolute;
+.recall-form__form::before {
+  content: "";
   top: 94px;
     left: 2px;
-  width: 665px;
-  height: 487px;
+
+    width: 665px;
+    height: 487px;
+
+  position: absolute;
+  background-image: url("../img/airplane-dots.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: 100;
 }
 
 .recall-form__header {
