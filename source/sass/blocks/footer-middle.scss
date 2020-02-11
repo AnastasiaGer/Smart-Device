@@ -6,6 +6,7 @@
 
 .footer-middle {
   width: 957px;
+  padding-left: 164px;
 }
 
 .footer-middle a {
@@ -27,25 +28,24 @@
 
 .accordion-menu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-height: 45px;
   margin: 20px 0 0 7px;
   padding: 0;
   list-style: none;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
 }
 
 .accordion-menu__item {
-  width: 400px;
-  margin-right: 15px;
+  margin-right: -56px;
   padding-bottom: 3px;
   padding-left: 17px;
 }
 
 .accordion-menu__item-header {
   cursor: pointer;
-
+  margin-bottom: 26px;
   color: #1b2d37;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
@@ -55,7 +55,8 @@
   text-transform: uppercase;
 }
 
-.submenuItems {
+.accordion-menu__submenuItems {
+  height: 100px;
   list-style: none;
   color: rgba(27, 45, 55, 0.5);
   font-family: 'PT Mono', monospace;
@@ -63,6 +64,38 @@
   font-weight: 400;
   line-height: 25px;
   text-decoration: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accordion-menu__submenuItems-item{
+  &--about {
+    margin-right: 73px;
+  }
+  &--products {
+    margin-right: 73px;
+  }
+  &--production {
+    margin-right: 73px;
+  }
+  &--montage {
+    margin-right: 73px;
+  }
+
+  &--accessories {
+    margin-bottom: -24px;
+  }
+
+  &--delivery {
+    margin-bottom: -21px;
+  }
+
+  &--contacts {
+    margin-bottom: 25px;
+  }
 }
 
 /**
@@ -118,7 +151,7 @@
     }
   }
 
-  .submenuItems {
+  .accordion-menu__submenuItems {
     display: none;
     background: #C8E6C9;
 
@@ -127,7 +160,7 @@
     }
   }
 
-  .submenuItems a {
+  .accordion-menu__submenuItems a {
     display: block;
     color: #727272;
     padding: 12px 12px 12px 45px;
