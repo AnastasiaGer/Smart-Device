@@ -11,7 +11,8 @@
 }
 
 .page-intro {
-  width: 1200px;
+  width: 1490px;
+  padding-bottom: 225px;
   height: 532px;
   position: relative;
   margin: 0 auto;
@@ -20,36 +21,48 @@
 
 .page-intro__banner {
   position: absolute;
-  top: 10px;
-  right: 10px;
-
-  background-image: url("../img/bg1.svg"), url("../img/bg2.jpg");
-
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain, cover;
+  top: 138px;
+    right: -40px;
 }
 
 .page-intro__header {
-  margin: 0;
+  margin: 0 0 61px 34px;
+  padding-top: 233px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 5.6px;
-  text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 5.6px;
+text-transform: uppercase;
 }
 
 .page-intro__tip {
   margin: 0;
+  margin-left: 132px;
+  margin-bottom: 57px;
   color: #ffffff;
   font-family: 'PT Mono', monospace;
   font-size: 22px;
   font-weight: 400;
   line-height: 36.09px;
+  position: relative;
+}
+
+.page-intro__tip::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -94px;
+  width: 66px;
+height: 2px;
+  background-image: url("../img/dash.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .btn-intro {
+  margin-left: 131px;
+  padding: 17px 43px 17px 46px;
   border-radius: 5px;
   background-color: #00b2ff;
   color: #ffffff;
@@ -58,6 +71,16 @@
   font-weight: 700;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #1b2931;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(27,41,49, 0.5);
+  }
 }
 
 .page-intro__scroll {
@@ -75,30 +98,6 @@
  * ===========================================================
 */
 @media (min-width: $tablet-max-width) {
-  .page-intro__banner {
-    position: absolute;
-  top: 10px;
-  right: 10px;
-
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain, cover;
-  }
-
-  .page-intro__header {
-    margin: 0;
-    transform: none;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 4.2px;
-  }
-
-  .page-intro__tip {
-    margin: 0;
-    font-size: 18px;
-    line-height: 28.22px;
-  }
-
   .page-intro__scroll {
     display: none;
   }
@@ -110,29 +109,5 @@
 * ===========================================================
 */
 @media (max-width: $mobile-max-width) {
-  .page-intro__banner {
-    position: absolute;
-  top: 10px;
-  right: 10px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain, cover;
-  }
 
-  .page-intro__header {
-    margin: 0;
-    transform: none;
-    font-size: 40px;
-    letter-spacing: 2.8px;
-  }
-
-  .page-intro__tip {
-    margin: 0;
-    font-size: 16px;
-    line-height: 25.09px;
-  }
-
-  .page-intro__scroll {
-    display: none;
-  }
 }

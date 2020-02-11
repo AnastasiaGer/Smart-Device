@@ -13,20 +13,56 @@
 .recall-form {
   display: flex;
   flex-direction: column;
-  height: 670px;
   margin-bottom: 40px;
   text-align: left;
   color: #323232;
-  padding: 25px 20px 0 22px;
+  padding: 25px 20px 112px 22px;
   background-color: #00b2ff;
-  width: 1200px;
+  width: 1490px;
   margin: 0 auto;
   position: relative;
 }
 
+.recall-form__form {
+  width: 572px;
+  margin-left: 739px;
+  padding-top: 37px;
+    padding-left: 16px;
+}
+
+.recall-form img {
+  position: absolute;
+  top: 94px;
+    left: 2px;
+  width: 665px;
+  height: 487px;
+}
+
+.recall-form__header {
+  margin: 0;
+    margin-top: 30px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50.63px;
+}
+
+.recall-form__tip {
+  margin: 10px 0 47px 4px;
+  color: #ffffff;
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+
 .recall-form__input-wrap {
+  margin-bottom: 37px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .recall-form input[type="text"],
@@ -34,10 +70,9 @@
   box-sizing: border-box;
   position: relative;
 
-  padding: 16px 22px;
-  margin-right: 10px;
+  padding: 16px 20px;
 
-  width: 50%;
+  width: 270px;
   min-width: 100px;
 
   color: #ffffff;
@@ -81,9 +116,7 @@
 
 .recall-form__message-wrap {
   padding: 0;
-
-  margin: 12px 20px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .recall-form__message-input {
@@ -129,67 +162,55 @@
   opacity: 1;
 }
 
-.recall-form img {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  width: 665px;
-  height: 487px;
-}
-
-.recall-form__form {
-  margin-left: 600px;
-}
-
-.recall-form__header {
-  color: #ffffff;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 50.63px;
-}
-
-.recall-form__tip {
-  color: #ffffff;
-  font-family: 'PT Mono', monospace;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22.5px;
-}
-
 .checkbox-area {
   opacity: 0.8;
   color: #ffffff;
   font-family: 'PT Mono', monospace;
   font-size: 14px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+position: relative;
 
 }
 
 .recall-form__checkbox-message {
   display: inline-block;
+
+  margin: 0;
   position: relative;
-  float: right;
-
-  margin: 18px 0;
-  margin-bottom: 21px;
-  padding-right: 10px;
-
-  width: 230px;
-
-  text-align: right;
-}
-
-.recall-form__checkbox-message {
-  display: block;
-
-  padding: 14px 0;
-  padding-left: 80px;
+  margin-top: 3px;
+  margin-left: 344px;
 }
 
 .recall-form__checkbox-input+label::before {
   content: "";
 
+  position: absolute;
+  top: 6px;
+    left: -33px;
+    width: 14px;
+    height: 15px;
+  border: 1px solid #ffffff;
+  background-color: #00b2ff;
+}
+
+.recall-form__checkbox-input:checked+label::after {
+  content: '';
+
+  transform: rotate(45deg);
+  border-right: 3px solid rgba(248, 247, 244, 1);
+  border-bottom: 3px solid rgba(248, 247, 244, 1);
+
+  position: absolute;
+  top: 8px;
+  left: -26px;
+  width: 3px;
+  height: 6px;
+}
+
+.recall-form input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
@@ -198,21 +219,6 @@
   height: 16px;
   border: 1px solid #ffffff;
   background-color: #00b2ff;
-}
-
-.recall-form__checkbox-input:checked+label::after {
-  content: url("../img/icon-tic.svg");
-
-  position: absolute;
-  top: 16px;
-  left: 17px;
-
-  width: 9px;
-  height: 6px;
-  fill: #fff;
-}
-
-.recall-form input[type="checkbox"] {
   cursor: pointer;
 
   line-height: 26px;
@@ -232,6 +238,14 @@
 }
 
 .recall-form__btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin-left: 4px;
+  width: 270px;
+height: 45px;
+
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -239,6 +253,7 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
   background-color: #00b2ff;
+  padding: 7px 19px 8px 18px;
   border-radius: 5px;
   border: 1px solid #ffffff;
 }

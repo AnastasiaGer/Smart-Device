@@ -11,16 +11,18 @@
 }
 
 .about {
-  width: 1200px;
-  height: 532px;
-  position: relative;
+  width: 1490px;
   margin: 0 auto;
+  margin-bottom: 110px;
+  position: relative;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 .about-header {
+  margin: 0;
+  margin: 30px 0 5px 340px;
   color: #666666;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -29,10 +31,13 @@
 }
 
 .about__container {
-  margin-left: 200px;
+  width: 984px;
+  margin-left: 340px;
 }
 
 .about-tip {
+  margin: 0;
+    margin-top: 18px;
   color: #666666;
   font-family: 'PT Mono', monospace;
   font-size: 16px;
@@ -41,6 +46,9 @@
 }
 
 .about-btn {
+  margin-top: 38px;
+    display: inline-block;
+    padding: 10px 50px 11px 49px;
   color: #00b2ff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -50,12 +58,20 @@
   background-color: #ffffff;
   border-radius: 5px;
   border: 1px solid #00b2ff;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+  }
 }
 
 .about-img {
   position: absolute;
-  top: 120px;
-  left: 0;
+  top: 41px;
+    left: 162px;
   width: 116px;
    height: 305px;
 }

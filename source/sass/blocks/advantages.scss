@@ -14,11 +14,11 @@
   display: flex;
   flex-direction: column;
 
-margin-bottom: 40px;
-color: #323232;
-padding: 25px 20px 0 22px;
+  margin-bottom: 40px;
+  color: #372a2a;
+  padding: 112px 110px 48px 376px;
   background-color: #ffffff;
-  width: 1200px;
+  width: 1490px;
   margin: 0 auto;
 }
 
@@ -27,32 +27,34 @@ padding: 25px 20px 0 22px;
 
   margin: 0;
   padding: 0;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.advantages__list.advantages__item :nth-child(2n + 1)
-{
-    margin-right: 20px;
+.advantages__list.advantages__item :nth-child(2n + 1) {
+  margin-right: 20px;
 }
 
 .advantages__item {
+  box-sizing: border-box;
+  width: 570px;
+  height: 299px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 
   position: relative;
 
-  width: 488px;
-  margin-left: 55px;
-
+  margin-left: 0px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 40px 42px 49px 44px;
   list-style: none;
   border: 1px solid #ebebeb;
   border-left: 2px solid #00b2ff;
 }
 
-.advantages__item :nth-child(2n + 2) p
-{
-    margin-left: 7px;
+.advantages__item :nth-child(2n + 2) p {
+  margin-left: 7px;
 }
 
 .advantages__item:hover {
@@ -61,6 +63,8 @@ padding: 25px 20px 0 22px;
 }
 
 .advantages__item-header {
+  margin: 0;
+  margin-top: 55px;
   color: #00b2ff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
@@ -74,8 +78,8 @@ padding: 25px 20px 0 22px;
   width: 29px;
   height: 35px;
 
-  top: 25px;
-  left: 21px;
+  top: 39px;
+  left: 42px;
 
   background-image: url("../img/icon-clock.svg");
   background-repeat: no-repeat;
@@ -88,8 +92,8 @@ padding: 25px 20px 0 22px;
   width: 35px;
   height: 35px;
 
-  top: 25px;
-  left: 21px;
+  top: 41px;
+    left: 42px;
 
   background-image: url("../img/icon-people.svg");
   background-repeat: no-repeat;
@@ -102,8 +106,8 @@ padding: 25px 20px 0 22px;
   width: 36px;
   height: 31px;
 
-  top: 25px;
-  left: 21px;
+  top: 45px;
+    left: 42px;
 
   background-image: url("../img/icon-hat.svg");
   background-repeat: no-repeat;
@@ -113,11 +117,11 @@ padding: 25px 20px 0 22px;
 .advantages__item-header--customization::before {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 35px;
+  height: 35px;
 
-  top: 25px;
-  left: 21px;
+  top: 40px;
+  left: 46px;
 
   background-image: url("../img/icon-dollar.svg");
   background-repeat: no-repeat;
@@ -137,15 +141,11 @@ padding: 25px 20px 0 22px;
 * ADVANTAGES tablet
  * ===========================================================
 */
-@media (min-width: $tablet-max-width) {
-
-}
+@media (min-width: $tablet-max-width) {}
 
 /**
  * ===========================================================
 * ADVANTAGES mobile
 * ===========================================================
 */
-@media (max-width: $mobile-max-width) {
-
-}
+@media (max-width: $mobile-max-width) {}

@@ -8,18 +8,24 @@
   padding: 0;
   display: flex;
   background-color:#1b2931;
+  background-image: url("../img/bg1.svg"), url("../img/bg2.jpg");
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain, cover;
 }
 
 .page-header__logo {
   height: 0;
   position: relative;
+  padding-top: 33px;
 }
 
 .page-header__img {
   position: absolute;
 
-  top: 0;
-  left: 0;
+  top: 33px;
+  left: -73px;
 
   width: 201px;
   height: 52px;
@@ -29,6 +35,9 @@
   font-family:  "Roboto Condensed", "Arial", sans-serif;
   font-size: 25px;
   font-weight: 700;
+  margin: 0;
+    margin-left: 70px;
+    margin-top: 11px;
 }
 
 .page-header__tip {
@@ -36,6 +45,8 @@
   font-family:  "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 500;
+  margin: 0;
+    margin-left: 70px;
 }
 
 /**

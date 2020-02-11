@@ -34,7 +34,7 @@
               <a class="main-nav__link main-nav__link--phone" href="#">+7 (495) 000 52 52</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link btn btn-contacts call-back " href="#">Заказать звонок</a>
+              <a class="main-nav__link btn btn-contacts" href="#">Заказать звонок</a>
             </li>
           </ul>
         </nav>
@@ -46,9 +46,9 @@
         <section class="page-intro">
           <img class="page-intro__banner" src="img/banner.png" width="705" height="515" alt="Smart-Device">
           <h2 class="page-intro__header">Печатные платы</h2>
-          <p class="page-intro__tip">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <p class="page-intro__tip">производство и монтаж, поставка комплектующих, <br> блоков и модулей</p>
           <a class="btn btn-intro" href="#">
-            <span>Получить бесплатную консультацию</span>
+            Получить бесплатную консультацию
           </a>
           <span class="page-intro__scroll">Скролл вниз</span>
         </section>
@@ -136,7 +136,7 @@
                 </picture>
               </a>
               <div class="services__item-info">
-                <h3 class="services__item-header">Производство печатных плат</h3>
+                <h3 class="services__item-header">Производство <br>печатных плат</h3>
                 <a class="btn btn-services" href="#">
                   Далее
                   <svg class="btn-services-icon" width="6" height="9" viewBox="0 0 8 14" fill="none"
@@ -171,7 +171,7 @@
                 </picture>
               </a>
               <div class="services__item-info">
-                <h3 class="services__item-header">Монтаж печатных плат</h3>
+                <h3 class="services__item-header">Монтаж печатных <br>плат</h3>
                 <a class="btn btn-services" href="#">
                   Далее
                   <svg class="btn-services-icon" width="6" height="9" viewBox="0 0 8 14" fill="none"
@@ -206,7 +206,7 @@
                 </picture>
               </a>
               <div class="services__item-info">
-                <h3 class="services__item-header">Комплектующие для светотехники</h3>
+                <h3 class="services__item-header">Комплектующие <br>для светотехники</h3>
                 <a class="btn btn-services" href="#">
                   Далее
                   <svg class="btn-services-icon" width="6" height="9" viewBox="0 0 8 14" fill="none"
@@ -243,12 +243,12 @@
             </div>
 
             <div class="checkbox-area">
-
-                <input class="visually-hidden recall-form__checkbox-input" id="checkbox-input" type="checkbox" name="consent" checked>
-                <label class="recall-form__checkbox-message" for="checkbox-input">
+              <button class="btn recall-form__btn" type="submit" value="Отправить вопрос">Задать вопрос</button>
+              <input class="visually-hidden recall-form__checkbox-input" id="checkbox-input" type="checkbox"
+                name="consent" checked>
+              <label class="recall-form__checkbox-message" for="checkbox-input">
                 Я согласен на обработку персональных данных
               </label>
-              <button class="btn recall-form__btn" type="submit" value="Отправить вопрос">Задать вопрос</button>
             </div>
           </form>
         </section>
@@ -256,64 +256,83 @@
 
     </main>
 
-    <footer class="page-footer">
-      <div class="footer-top">
-        <div class="footer-logo">
-          <img src="img/logo.svg" alt="Smart-Device" width="201" height="52">
-        </div>
+    <div class="page-footer-wrapper">
+      <footer class="page-footer">
+        <div class="footer-top">
 
-        <div class="page-footer__social">
-          <div class="social-links">
-            <a class="social-links__item social-btn social-btn-vk" href="#">Фейсбук</a>
-            <a class="social-links__item social-btn social-btn-vk" href="#">Одноклассники</a>
-            <a class="social-links__item social-btn social-btn-vk" href="#">ВКонтакте</a>
+          <div class="footer-logo">
+            <img class="footer-logo__img" src="img/logo.svg" alt="Smart-Device" width="52" height="52">
+            <h1 class="footer-logo__title">Service Device</h1>
+            <p class="footer-logo__tip">умные технологии</p>
+          </div>
+
+          <div class="page-footer__social">
+            <div class="social-links">
+              <a class="social-links__item" href="#">
+                Фейсбук
+                <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"><g><g><g><g><g><path fill="#cdcdcd" d="M13.5 27C6.044 27 0 20.956 0 13.5 0 6.045 6.044 0 13.5 0S27 6.045 27 13.5C27 20.956 20.956 27 13.5 27zm3.384-20.276h-2.046v.01c-2.478.087-2.986 1.48-3.03 2.943h-.005v1.283h-1.688v2.517h1.688v6.747h2.542v-6.747h2.084l.402-2.517h-2.485v-.775c0-.494.33-.891.798-.891h1.74z"/></g></g></g></g></g></svg>
+              </a>
+
+              <a class="social-links__item" href="#">
+                Одноклассники
+                <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26"><g><g><g><g><path fill="#cdcdcd" d="M13.848 10.96c1.016 0 1.806-.836 1.787-1.746.019-.91-.753-1.764-1.768-1.764-.978 0-1.787.78-1.787 1.746 0 .965.79 1.764 1.768 1.764z"/></g><g><path fill="#cdcdcd" d="M26.871 13c0 7.168-5.887 13-13.165 13C6.446 26 .54 20.187.54 13 .54 5.83 6.446 0 13.706 0 20.984 0 26.89 5.831 26.87 13zM9.55 9.193c0 2.321 1.9 4.234 4.27 4.271 2.407.037 4.382-1.876 4.382-4.253.019-2.358-1.938-4.29-4.307-4.29-2.408 0-4.345 1.913-4.345 4.272zm9.178 5.571a1.913 1.913 0 0 0-.075-.315c-.263-.725-1.147-1.04-1.824-.65-.414.222-.809.427-1.26.575-.47.149-.94.242-1.411.26-.96.056-1.88-.13-2.746-.557a3.46 3.46 0 0 1-.451-.241c-.79-.502-1.844 0-1.938.928-.056.502.15.91.583 1.189.734.446 1.505.78 2.351.984.02 0 .057.019.076.019.075.018.075.018.019.074l-1.392 1.374-.94.929c-.358.353-.47.78-.32 1.263.15.483.489.761.996.854.038 0 .057.019.094.019h.245c.113-.02.245-.038.357-.093.17-.075.301-.168.433-.298l2.295-2.265c.056-.056.056-.056.112 0l2.276 2.247c.226.204.47.353.771.39 0 .019.019.019.038.019h.244c.15-.038.301-.056.433-.13.79-.372.96-1.393.339-2.006l-1.317-1.3-1.034-1.022c-.057-.055-.057-.055.018-.074a8.55 8.55 0 0 0 1.787-.65c.226-.111.451-.241.658-.371.32-.205.508-.502.565-.873 0-.037.018-.056.018-.093v-.186z"/></g></g></g></g></svg>
+              </a>
+
+              <a class="social-links__item" href="#">
+                ВКонтакте
+                <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26"><g><g><g><g><path fill="#cdcdcd" d="M21.138 17.412c0 .236-.159.394-.713.394h-2.138c-1.188 0-1.426-.63-2.376-1.576-.872-.867-1.347-.236-1.347 1.024a.6.6 0 0 1-.158.394.607.607 0 0 1-.396.158c-1.268 0-3.09.157-4.91-1.734-1.823-1.97-3.803-5.83-3.803-6.223 0-.237.238-.316.555-.316h2.06c.395 0 .712.237.791.63.713 1.498 2.297 4.413 2.693 2.758.238-.945.317-3.151-.713-3.309-.554-.079.475-.709 1.98-.709.396 0 .792.079 1.188.158.238 0 .475.157.634.315.158.157.237.394.158.63 0 1.891-.237 3.073.238 3.388.475.315 1.742-1.655 2.376-3.152.158-.393.238-.709.713-.709h2.614c1.425 0-.159 1.891-1.347 3.388-.95 1.182-.871 1.182.238 2.206.792.71 1.742 1.733 1.663 2.285zM.07 13c0 7.17 5.94 12.92 13.385 13 7.366.078 13.465-5.595 13.544-12.764C27.079 6.067 21.217.158 13.851.001 6.327-.078.15 5.75.07 13z"/></g></g></g></g></svg>
+              </a>
+
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer-middle">
-        <div class="footer-menu">
-          <ul class="accordion-menu">
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Разделы сайта</h2>
-              <ul class="submenuItems">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Продукты</a></li>
-                <li><a href="#">Производство печатных плат</a></li>
-                <li><a href="#">Монтаж печатных плат</a></li>
-                <li><a href="#">Комплектующие </a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </li>
-            <li>
-              <input type="checkbox" checked>
-              <i></i>
-              <h2>Наш офис</h2>
-              <ul class="submenuItems">
-                <li><span class="contacts-address">г. Мытищи, Олимпийский проспект, д.10</span></li>
-                <li><a class="contacts-phone" href="tel:84955894050">+7 (495) 589-40-50</a></li>
-                <li><a class="contacts-phone" href="tel:89250038767">+7 (925) 003-87-67</a></li>
-                <li><a class="contacts-phone" href="tel:892692608079">+7 (926) 926-080-79</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div class="footer-middle">
+          <div class="footer-menu">
+            <ul class="accordion-menu">
+              <li class="accordion-menu__item">
+                <div class="accordion-menu__item-header"><i class="fa" aria-hidden="true"></i> Разделы сайта
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems">
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Продукты</a></li>
+                  <li><a href="#">Производство печатных плат</a></li>
+                  <li><a href="#">Монтаж печатных плат</a></li>
+                  <li><a href="#">Комплектующие </a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </li>
+              <li class="accordion-menu__item">
+                <div class="accordion-menu__item-header"><i class="fa" aria-hidden="true"></i> Наш офис
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="submenuItems">
+                  <li><span class="contacts-address">г. Мытищи, Олимпийский проспект, д.10</span></li>
+                  <li><a class="contacts-phone" href="tel:84955894050">+7 (495) 589-40-50</a></li>
+                  <li><a class="contacts-phone" href="tel:89250038767">+7 (925) 003-87-67</a></li>
+                  <li><a class="contacts-phone" href="tel:892692608079">+7 (926) 926-080-79</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer-bottom">
-          <p>Все права защищены</p>
-          <p>1999-2018 SD Service Devices</p>
-          <a class="" href="#">Условия конфиденциальности</a>
-          <p class="page-footer__copyright">
-            Developed by <a class="page-footer__copyright-link" href="#"> wow studio </a>
+          <p class="footer-bottom__tip">Все права защищены</p>
+          <p class="footer-bottom__tip">1999-2018 SD Service Devices</p>
+          <a class="page-footer__link" href="#">Условия конфиденциальности</a>
+          <p class="footer-bottom__tip">
+            Developed by <a class="page-footer__link" href="#"> wow studio </a>
           </p>
-    </footer>
+        </div>
 
+      </footer>
+    </div>
   </div>
 
-  <section class="modal-dialog">
+  <section class="modal-dialog visually-hidden">
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="call-back-form" action="#" method="post">
@@ -335,7 +354,7 @@
     </form>
   </section>
   <div class="modal modal-overlay"></div>
-  <!-- <script src="js/script.min.js"></script>-->
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

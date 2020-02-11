@@ -1,0 +1,38 @@
+/**
+* ===========================================================
+* PAGE-FOOTER desktop
+* ===========================================================
+*/
+.page-footer-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+  color: #323232;
+  padding: 46px 20px 0 22px;
+  background-color: #fafafa;
+  width: 1490px;
+  margin: 0 auto;
+}
+
+/**
+* ===========================================================
+* PAGE-FOOTER  tablet
+ * ===========================================================
+*/
+@media (min-width: $tablet-max-width) {}
+
+/**
+ * ===========================================================
+* PAGE-FOOTER  mobile
+* ===========================================================
+*/
+@media (max-width: $mobile-max-width) {}

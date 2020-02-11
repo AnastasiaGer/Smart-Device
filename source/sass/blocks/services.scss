@@ -11,18 +11,18 @@
 }
 
 .services {
-  display: flex;
-  flex-direction: column;
-
   margin-bottom: 40px;
   color: #323232;
-  padding: 25px 20px 0 22px;
+  padding: 39px 20px 0 22px;
   background-color: #1b2d37;
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
 }
 
 .services-header {
+  margin: 0;
+  margin-top: 51px;
+  margin-bottom: 30px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -32,22 +32,18 @@
 
 .services__list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-.services__list .services__item :nth-child(3n + 1) {
-  margin-right: 20px;
+  padding: 21px 0 121px 0;
 }
 
 .services__item {
   box-sizing: border-box;
   width: 25%;
-  height: 620px;
-  margin-right: 25px;
-  padding: 21px 22px;
+  margin-left: 30px;
 
   list-style: none;
 
@@ -57,14 +53,25 @@
   flex-grow: 1;
   position: relative;
 }
-.services__item__link img{
-  filter: opacity(30%)
+
+.services__item:first-child {
+  margin-left: 0;
+}
+
+.services__item__link img {
+  filter: opacity(30%);
+
+  &:hover {
+    filter: opacity(70%);
+  }
+
+  &:active {
+    filter: opacity(20%);
+  }
 }
 
 .services__item__link {
   display: inline-block;
-  margin-bottom: -8px;
-
 
   &:focus {
     border: 0.5px dashed #81b3d2;
@@ -78,18 +85,23 @@
 }
 
 .services__item-info {
+  height: 620px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   padding: 0;
   padding-top: 16px;
 }
 
 .services__item-header {
+  margin: 0;
+  margin-top: 34px;
+  margin-left: 42px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
@@ -108,7 +120,8 @@
 
   display: inline-block;
 
-  margin: 0 3px;
+  margin: 0 0 16px 306px;
+
   padding: 0;
   width: 63px;
   height: 63px;
@@ -135,14 +148,11 @@
 
 .btn-services-icon {
   position: absolute;
-  top: 35px;
-  left: 35px;
+  top: 27px;
+  left: 31px;
   transform: rotate(180deg);
-  margin-top: -9px;
-  margin-left: -9px;
 
   fill: #ffffff;
-
 }
 
 /**

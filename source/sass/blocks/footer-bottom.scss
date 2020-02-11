@@ -1,0 +1,66 @@
+/**
+* ===========================================================
+* FOOTER-BOTTOM desktop
+* ===========================================================
+*/
+.footer-bottom {
+  width: 1200px;
+  display: flex;
+  max-height: 55px;
+  margin: 20px 0 0 7px;
+  padding: 0;
+  list-style: none;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
+}
+
+.footer-bottom__tip{
+  color: rgba(27,45,55, 0.5);
+  font-family: 'PT Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 10px 0 0 7px;
+  padding: 0;
+}
+
+.page-footer__link {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: rgba(27,45,55, 0.5);
+  font-family: 'PT Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.52px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 10px 0 0 7px;
+  padding: 0;
+
+  &:hover {
+    color:#000000;
+  }
+
+  &:active {
+    color:#c4baba;
+  }
+}
+
+/**
+* ===========================================================
+* FOOTER-BOTTOM  tablet
+ * ===========================================================
+*/
+@media (min-width: $tablet-max-width) {}
+
+/**
+ * ===========================================================
+* FOOTER-BOTTOM  mobile
+* ===========================================================
+*/
+@media (max-width: $mobile-max-width) {}
