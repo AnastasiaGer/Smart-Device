@@ -45,8 +45,12 @@
   letter-spacing: 0.52px;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 10px 5px 7px 0;
+  margin: 12px 405px 7px 0;
   padding: 0;
+
+  &--wow {
+    margin: 0;
+  }
 
   &:hover {
     color:#000000;

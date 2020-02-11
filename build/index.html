@@ -34,7 +34,7 @@
               <a class="main-nav__link main-nav__link--phone" href="#">+7 (495) 000 52 52</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link btn btn-contacts" href="#">Заказать звонок</a>
+              <a class="main-nav__link btn btn-contacts dialog-link" href="#">Заказать звонок</a>
             </li>
           </ul>
         </nav>
@@ -335,7 +335,7 @@
           <p class="footer-bottom__tip footer-bottom__tip--years">1999-2018 SD Service Devices</p>
           <a class="page-footer__link" href="#">Условия конфиденциальности</a>
           <p class="footer-bottom__tip footer-bottom__tip--wow">
-            Developed by <a class="page-footer__link" href="#"> wow studio </a>
+            Developed by <a class="page-footer__link page-footer__link--wow" href="#"> wow studio </a>
           </p>
         </div>
 
@@ -343,26 +343,32 @@
     </div>
   </div>
 
-  <section class="modal-dialog visually-hidden">
-    <h2>Закажите звонок</h2>
-    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form class="call-back-form" action="#" method="post">
-      <input type="text" name="name" id="user-first-name" class="call-back-name colortext" placeholder="Имя" aria-label="Имя" required="">
-      <input type="text" name="phone" id="phone" class="call-back-phone colortext" placeholder="Телефон" aria-label="Телефон" required="">
-      <textarea id="call-back" class="call-back-message" aria-label="Ваш вопрос" name="message" placeholder="Ваш вопрос"></textarea>
+  <section class="modal modal-dialog">
+    <form class="modal-recall-form" action="#" method="post">
+      <h2 class="modal-recall-form__header">Закажите звонок</h2>
+      <p class="modal-recall-form__tip">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <input class="modal-recall-form__name colortext" type="text" id="name" name="name" placeholder="Имя" aria-label="Имя" required="">
+        <input class="modal-recall-form__phone colortext" type="tel" id="tel" name="tel" placeholder="Телефон" aria-label="Телефон" required="">
 
-      <button class="button" type="submit">Отправить</button>
 
-      <div class="checkbox-area">
-        <label>
-          <input type="checkbox" name="consent">
+        <textarea class="modal-recall-form__message-input" id="message" name="message" aria-label="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
+
+
+      <div class="modal-checkbox-area">
+        <button class="btn modal-recall-form__btn" type="submit" value="Отправить вопрос">Отправить</button>
+        <input class="visually-hidden modal-recall-form__checkbox-input" id="checkbox-input" type="checkbox" name="consent" checked="">
+        <label class="modal-recall-form__checkbox-message" for="checkbox-input">
           Я согласен на обработку персональных данных
         </label>
       </div>
     </form>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><g><g><path fill="#fff" d="M.147.854A.5.5 0 0 1 .854.146l7.424 7.425L15.703.146a.5.5 0 1 1 .707.708L8.985 8.278l7.425 7.425a.5.5 0 0 1-.707.707L8.278 8.985.854 16.41a.5.5 0 1 1-.708-.707l7.425-7.425z"></path></g></g></svg>
+   </button>
   </section>
   <div class="modal modal-overlay"></div>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

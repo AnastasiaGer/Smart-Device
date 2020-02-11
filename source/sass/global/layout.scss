@@ -14,20 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-
-  top: 0;
-  left: 0;
-
-  height: 100%;
-  width: 100%;
-
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 250;
-}
-
 .hidden {
   display: none;
 }
