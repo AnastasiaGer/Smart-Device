@@ -4,15 +4,14 @@
   * ===========================================================
 */
 .page-header {
-  margin: 0 auto;
   padding: 0;
   display: flex;
   background-color:#1b2931;
-  background-image: url("../img/bg1.svg"), url("../img/bg2.jpg");
+  background-image: url("../img/bg1.png"), url("../img/bg2.png"), url("../img/black-ocean.png");
 
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain, cover;
+  background-position: top center;
+  background-position: center;
 }
 
 .page-header__logo {

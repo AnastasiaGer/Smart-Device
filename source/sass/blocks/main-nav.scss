@@ -26,6 +26,12 @@
   font-size: 16px;
   font-weight: 400;
   background-color:#1b2931;
+
+  background-image: url("../img/bg1.png"), url("../img/bg2.png"), url("../img/black-ocean.png");
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position: center;
 }
 
 .main-nav__list {

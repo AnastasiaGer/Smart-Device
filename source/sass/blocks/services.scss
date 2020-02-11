@@ -43,6 +43,7 @@
 .services__item {
   box-sizing: border-box;
   width: 25%;
+  height: 620px;
   margin-left: 30px;
 
   list-style: none;
@@ -52,14 +53,6 @@
 
   flex-grow: 1;
   position: relative;
-}
-
-.services__item:first-child {
-  margin-left: 0;
-}
-
-.services__item__link img {
-  filter: opacity(30%);
 
   &:hover {
     filter: opacity(70%);
@@ -68,7 +61,73 @@
   &:active {
     filter: opacity(20%);
   }
+
+  &--production::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/production-desktop@1x.png");
+    filter: opacity(30%);
+    background-repeat: repeat;
+    background-position: top center;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/production-desktop@2x.png");
+    }
+  }
+
+  &--montage::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/montage-desktop@1x.png");
+    filter: opacity(30%);
+    background-repeat: repeat;
+    background-position: top center;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/montage-desktop@2x.png");
+    }
+  }
+
+  &--accessories::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/accessories-desktop@1x.png");
+    filter: opacity(30%);
+    background-repeat: repeat;
+    background-position: top center;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/accessories-desktop@2x.png");
+    }
+  }
 }
+
+.services__item:first-child {
+  margin-left: 0;
+}
+
+.services__item__link img {}
 
 .services__item__link {
   display: inline-block;
