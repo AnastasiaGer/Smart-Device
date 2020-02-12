@@ -124,8 +124,6 @@
   margin-left: 0;
 }
 
-.services__item__link img {}
-
 .services__item__link {
   display: inline-block;
 
@@ -216,7 +214,156 @@
 * SERVICES tablet
  * ===========================================================
 */
-@media (min-width: $tablet-max-width) {}
+@media (max-width: $tablet-max-width) {
+  .services {
+    margin-bottom: 40px;
+    padding: 39px 25px 0 25px;
+    width: $tablet-max-width;
+    margin: 0 auto;
+  }
+
+  .services-header {
+    margin: 0;
+    margin-top: 51px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+
+  .services__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 21px 0 121px 0;
+  }
+
+  .services__item {
+    box-sizing: border-box;
+    width: 715px;
+    height: 256px;
+    margin-left: 0;
+    margin-bottom: 46px;
+
+    list-style: none;
+
+    position: relative;
+
+    &--production::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url("../img/production-tablet@1x.png");
+      filter: opacity(30%);
+      background-repeat: repeat;
+      background-position: top center;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/production-tablet@2x.png");
+      }
+    }
+
+    &--montage::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url("../img/montage-tablet@1x.png");
+      filter: opacity(30%);
+      background-repeat: repeat;
+      background-position: top center;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/montage-tablet@2x.png");
+      }
+    }
+
+    &--accessories::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url("../img/accessories-tablet@1x.png");
+      filter: opacity(30%);
+      background-repeat: repeat;
+      background-position: top center;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/accessories-tablet@2x.png");
+      }
+    }
+  }
+
+  .services__item-info {
+    height: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0;
+    padding-top: 16px;
+  }
+
+  .btn-services {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0 16px 306px;
+
+    padding: 0;
+    width: 63px;
+    height: 63px;
+    background-color: #00b2ff;
+
+    font-size: 0;
+
+    border: none;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+
+    &:active .btn-services-icon {
+      fill: #88b6d1;
+    }
+
+  }
+
+  .btn-services-icon {
+    position: absolute;
+    top: 27px;
+    left: 31px;
+    transform: rotate(180deg);
+
+    fill: #ffffff;
+  }
+}
 
 /**
  * ===========================================================

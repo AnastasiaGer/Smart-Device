@@ -29,7 +29,19 @@
 * PAGE-FOOTER  tablet
  * ===========================================================
 */
-@media (min-width: $tablet-max-width) {}
+@media (max-width: $tablet-max-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+
+    padding: 46px 20px 0 22px;
+
+    width: $tablet-max-width;
+  }
+}
 
 /**
  * ===========================================================

@@ -4,6 +4,7 @@
 var link = document.querySelector('.dialog-link');
 
 var popup = document.querySelector('.modal-dialog');
+// eslint-disable-next-line no-redeclare
 var close = document.querySelector('.modal-close');
 var closeOverlay = document.querySelector('.modal-overlay');
 var overlay = document.querySelector('.modal-overlay');

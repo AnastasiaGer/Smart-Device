@@ -57,12 +57,11 @@
   .page-header {
     width: $tablet-max-width;
 
-    margin: 0 auto;
   }
   .page-header__img {
     position: absolute;
 
-    top: 0;
+    top: 40px;
     left: 0;
 
     width: 52px;
