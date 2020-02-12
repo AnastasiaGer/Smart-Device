@@ -100,7 +100,7 @@ height: 2px;
 * PAGE INTRO tablet
  * ===========================================================
 */
-@media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-width) {
   .page-intro__banner {
     position: absolute;
     top: 138px;
@@ -155,6 +155,6 @@ line-height: 28.22px;
 * PAGE INTRO mobile
 * ===========================================================
 */
-@media (max-width: $mobile-max-width) {
+@media (max-width: $mobile-width) {
 
 }

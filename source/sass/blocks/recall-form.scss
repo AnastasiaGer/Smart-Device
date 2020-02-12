@@ -16,7 +16,7 @@
   margin-bottom: 40px;
   text-align: left;
   color: #323232;
-  padding: 25px 20px 112px 22px;
+  padding: 25px 20px 121px 22px;
   background-color: #00b2ff;
   width: 1490px;
   margin: 0 auto;
@@ -247,7 +247,7 @@ position: relative;
 
 .recall-form__btn {
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
   display: inline-block;
   margin-left: 4px;
@@ -271,10 +271,10 @@ height: 45px;
 * RECALL-FORM tablet
  * ===========================================================
 */
-@media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-width) {
   .recall-form {
     padding: 25px 20px 112px 22px;
-    width: $tablet-max-width;
+    width: $tablet-width;
   }
 
   .recall-form__form {
@@ -304,4 +304,4 @@ height: 45px;
 * RECALL-FORM mobile
 * ===========================================================
 */
-@media (max-width: $mobile-max-width) {}
+@media (max-width: $mobile-width) {}

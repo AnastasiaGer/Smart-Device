@@ -214,11 +214,11 @@
 * SERVICES tablet
  * ===========================================================
 */
-@media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-width) {
   .services {
     margin-bottom: 40px;
     padding: 39px 25px 0 25px;
-    width: $tablet-max-width;
+    width: $tablet-width;
     margin: 0 auto;
   }
 
@@ -370,4 +370,4 @@
 * SERVICES mobile
 * ===========================================================
 */
-@media (max-width: $mobile-max-width) {}
+@media (max-width: $mobile-width) {}

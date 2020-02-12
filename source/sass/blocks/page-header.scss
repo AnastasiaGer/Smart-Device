@@ -53,9 +53,9 @@
   * PAGE HEADER tablet
   * ===========================================================
 */
-@media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-width) {
   .page-header {
-    width: $tablet-max-width;
+    width: $tablet-width;
 
   }
   .page-header__img {
@@ -75,7 +75,7 @@
   * PAGE HEADER mobile
   * ===========================================================
 */
-@media (max-width: $mobile-max-width) {
+@media (max-width: $mobile-width) {
   .page-header {
     margin: 0 auto;
     padding: 0;

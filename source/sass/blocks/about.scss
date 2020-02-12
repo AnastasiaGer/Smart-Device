@@ -21,7 +21,7 @@
 
 .about-header {
   margin: 0;
-  margin: 30px 0 5px 340px;
+  margin: 30px 0 4px 555px;
   color: #666666;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -31,7 +31,7 @@
 
 .about__container {
   width: 984px;
-  margin-left: 340px;
+  margin-left: 552px;
   position: relative;
 }
 
@@ -60,9 +60,9 @@
 }
 
 .about-btn {
-  margin-top: 38px;
+  margin-top: 39px;
   display: inline-block;
-  padding: 10px 50px 11px 49px;
+  padding: 10px 54px 11px 49px;
   color: #00b2ff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -87,9 +87,9 @@
 * ABOUT tablet
  * ===========================================================
 */
-@media (max-width: $tablet-max-width) {
+@media (max-width: $tablet-width) {
   .about {
-      width: $tablet-max-width;
+      width: $tablet-width;
   }
   .about-header {
     margin: 0;
@@ -153,4 +153,4 @@ line-height: 45px;
 * ABOUT mobile
 * ===========================================================
 */
-@media (max-width: $mobile-max-width) {}
+@media (max-width: $mobile-width) {}
