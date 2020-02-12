@@ -55,14 +55,20 @@
 */
 @media (max-width: $tablet-max-width) {
   .page-header {
+    width: $tablet-max-width;
+
     margin: 0 auto;
   }
-
   .page-header__img {
     position: absolute;
 
     top: 0;
     left: 0;
+
+    width: 52px;
+    height: 52px;
+
+    z-index: 100;
   }
 }
 /**
