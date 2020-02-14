@@ -44,6 +44,14 @@
 
 .main-nav__item {
   width: 218px;
+box-sizing: border-box;
+  &--mail {
+    padding: 50px 64px 50px 61px;
+  }
+
+  &--phone {
+    padding: 50px 0px 50px 44px;
+  }
 
   &--mail::before {
     content: "";
@@ -71,7 +79,6 @@
 .main-nav__link {
   display: block;
   padding: 0;
-  text-align: center;
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -80,21 +87,11 @@
 
   &[href]:hover {
     background-color: #00b2ff;
-    cursor: pointer;
   }
 
   &[href]:active {
     background-color: #00b2ff;
     color: #88b6d1;
-    cursor: pointer;
-  }
-
-  &--mail {
-    padding: 50px 64px 50px 61px;
-  }
-
-  &--phone {
-    padding: 50px 0px 50px 44px;
   }
 }
 
