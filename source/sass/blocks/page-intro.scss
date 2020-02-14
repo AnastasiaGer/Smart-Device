@@ -9,7 +9,6 @@
   background-image: url("../img/bg2.png");
   background-repeat: repeat;
   background-position: top center;
-  background-position: center;
 }
 
 .page-intro {
@@ -17,6 +16,21 @@
   position: relative;
   margin: 0 auto;
   width: 1490px;
+}
+
+.page-intro::before {
+  content: "";
+  position: absolute;
+  width: 705px;
+  height: 515px;
+  left: 743px;
+  top: 140px;
+  background-image: url("../img/Mask.png");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: inherit;
+
 }
 
 .page-intro__banner {
@@ -27,33 +41,6 @@
   height: 515px;
 }
 
-.page-intro:after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 9px;
-  top: 0;
-  right: 0;
-  background-image: url("../img/2dotts-up.svg");
-  background-repeat: repeat;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
-
-.page-intro:after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 9px;
-  top: 0;
-  right: 0;
-  background-image: url("../img/2dotts-down.svg");
-  background-repeat: repeat;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
-
-
 .page-intro__header {
   margin: 0 0 61px 34px;
   padding-top: 233px;
@@ -63,6 +50,7 @@
   font-weight: 700;
   letter-spacing: 5.6px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .page-intro__tip {

@@ -55,11 +55,11 @@
   position: relative;
 
   &:hover {
-    filter: opacity(70%);
+    filter: opacity(50%);
   }
 
   &:active {
-    filter: opacity(20%);
+    filter: opacity(70%);
   }
 
   &--production::before {
@@ -70,10 +70,10 @@
     height: 100%;
     position: absolute;
     background-image: url("../img/production-desktop@1x.png");
-    filter: opacity(30%);
     background-repeat: repeat;
     background-position: top center;
     background-size: cover;
+    filter: opacity(30%);
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -89,10 +89,10 @@
     height: 100%;
     position: absolute;
     background-image: url("../img/montage-desktop@1x.png");
-    filter: opacity(30%);
     background-repeat: repeat;
     background-position: top center;
     background-size: cover;
+    filter: opacity(30%);
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -108,10 +108,10 @@
     height: 100%;
     position: absolute;
     background-image: url("../img/accessories-desktop@1x.png");
-    filter: opacity(30%);
     background-repeat: repeat;
     background-position: top center;
     background-size: cover;
+    filter: opacity(30%);
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -262,15 +262,14 @@
       height: 100%;
       position: absolute;
       background-image: url("../img/production-tablet@1x.png");
-      filter: grayscale(100%);
       background-repeat: repeat;
       background-position: top center;
       background-size: cover;
+      filter: opacity(30%);
 
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
         background-image: url("../img/production-tablet@2x.png");
-        filter: grayscale(100%);
       }
     }
 
@@ -282,14 +281,13 @@
       height: 100%;
       position: absolute;
       background-image: url("../img/montage-tablet@1x.png");
-      filter: grayscale(100%);
       background-repeat: repeat;
       background-position: top center;
       background-size: cover;
+      filter: opacity(30%);
 
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-        filter: grayscale(100%);
         background-image: url("../img/montage-tablet@2x.png");
       }
     }
@@ -302,14 +300,13 @@
       height: 100%;
       position: absolute;
       background-image: url("../img/accessories-tablet@1x.png");
-      filter: grayscale(100%);
       background-repeat: repeat;
       background-position: top center;
       background-size: cover;
+      filter: opacity(30%);
 
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-        filter: grayscale(100%);
         background-image: url("../img/accessories-tablet@2x.png");
       }
     }
