@@ -82,12 +82,12 @@
   color: #ffffff;
 
   &[href]:hover {
-    background-color: #669ec0;
+    background-color: #00b2ff;
     cursor: pointer;
   }
 
   &[href]:active {
-    background-color: #5496bd;
+    background-color: #00b2ff;
     color: #88b6d1;
     cursor: pointer;
   }
@@ -105,6 +105,7 @@
   margin-top: 38px;
   margin-left: 34px;
   padding: 14px 12px 8px 13px;
+  background-color: none;
 }
 
 /**

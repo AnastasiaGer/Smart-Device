@@ -127,7 +127,7 @@
   margin-bottom: 40px;
 }
 
-.recall-form__message-input {
+.recall-form__message-wrap textarea {
   box-sizing: border-box;
   padding: 15px 20px;
   margin: 0;
@@ -161,7 +161,7 @@
   }
 }
 
-.recall-form__message-input::placeholder {
+.recall-form__message-wrap textarea::placeholder {
   color: #ffffff;
 
   font-size: 16px;
@@ -183,7 +183,7 @@ position: relative;
 
 }
 
-.recall-form__checkbox-message {
+.checkbox-area label {
   display: inline-block;
 
   margin: 0;
@@ -192,7 +192,7 @@ position: relative;
   margin-left: 344px;
 }
 
-.recall-form__checkbox-input+label::before {
+.checkbox-area input+label::before {
   content: "";
 
   position: absolute;
@@ -204,7 +204,7 @@ position: relative;
   background-color: #00b2ff;
 }
 
-.recall-form__checkbox-input:checked+label::after {
+.checkbox-area input:checked+label::after {
   content: '';
 
   transform: rotate(45deg);

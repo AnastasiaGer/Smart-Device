@@ -5,16 +5,15 @@
 */
 .page-intro-wrapper {
   padding: 0;
-  background-color:#1b2931;
-  background-image: url("../img/bg1.png"), url("../img/bg2.png"), url("../img/black-ocean.png");
-background-repeat: repeat;
-background-position: top center;
-background-position: center;
+  background-color: #1b2931;
+  background-image: url("../img/bg2.png");
+  background-repeat: repeat;
+  background-position: top center;
+  background-position: center;
 }
 
 .page-intro {
   padding-bottom: 225px;
-  height: 532px;
   position: relative;
   margin: 0 auto;
   width: 1490px;
@@ -23,10 +22,37 @@ background-position: center;
 .page-intro__banner {
   position: absolute;
   top: 138px;
-    right: -40px;
-    width: 705px;
-height: 515px;
+  right: -40px;
+  width: 705px;
+  height: 515px;
 }
+
+.page-intro:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/2dotts-up.svg");
+  background-repeat: repeat;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.page-intro:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 9px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/2dotts-down.svg");
+  background-repeat: repeat;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
 
 .page-intro__header {
   margin: 0 0 61px 34px;
@@ -34,9 +60,9 @@ height: 515px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
-font-weight: 700;
-letter-spacing: 5.6px;
-text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5.6px;
+  text-transform: uppercase;
 }
 
 .page-intro__tip {
@@ -57,7 +83,7 @@ text-transform: uppercase;
   top: 17px;
   left: -94px;
   width: 66px;
-height: 2px;
+  height: 2px;
   background-image: url("../img/dash.svg");
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -74,6 +100,7 @@ height: 2px;
   font-weight: 700;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  border: none;
 
   &:hover {
     color: #ffffff;
@@ -82,7 +109,7 @@ height: 2px;
 
   &:active {
     color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(27,41,49, 0.5);
+    background-color: rgba(27, 41, 49, 0.5);
   }
 }
 
@@ -113,9 +140,11 @@ height: 2px;
     margin: 0 0 61px 34px;
     padding-top: 233px;
     font-size: 60px;
-font-weight: 700;
-letter-spacing: 4.2px;
+    font-weight: 700;
+    letter-spacing: 4.2px;
   }
+
+
 
   .page-intro__tip {
     margin: 0;
@@ -123,12 +152,12 @@ letter-spacing: 4.2px;
     margin-left: 132px;
     margin-bottom: 57px;
     font-size: 18px;
-font-weight: 400;
-line-height: 28.22px;
+    font-weight: 400;
+    line-height: 28.22px;
     position: relative;
   }
 
-  .page-intro__tip br{
+  .page-intro__tip br {
     display: none;
   }
 
@@ -136,7 +165,7 @@ line-height: 28.22px;
     top: 17px;
     left: -94px;
     width: 33px;
-  height: 2px;
+    height: 2px;
   }
 
   .btn-intro {
@@ -155,6 +184,4 @@ line-height: 28.22px;
 * PAGE INTRO mobile
 * ===========================================================
 */
-@media (max-width: $mobile-width) {
-
-}
+@media (max-width: $mobile-width) {}

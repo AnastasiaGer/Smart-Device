@@ -252,6 +252,8 @@
 
     position: relative;
 
+    background: #C4C4C4;
+
     &--production::before {
       content: "";
       top: 0;
@@ -260,7 +262,7 @@
       height: 100%;
       position: absolute;
       background-image: url("../img/production-tablet@1x.png");
-      filter: opacity(30%);
+      filter: grayscale(100%);
       background-repeat: repeat;
       background-position: top center;
       background-size: cover;
@@ -268,6 +270,7 @@
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
         background-image: url("../img/production-tablet@2x.png");
+        filter: grayscale(100%);
       }
     }
 
@@ -279,13 +282,14 @@
       height: 100%;
       position: absolute;
       background-image: url("../img/montage-tablet@1x.png");
-      filter: opacity(30%);
+      filter: grayscale(100%);
       background-repeat: repeat;
       background-position: top center;
       background-size: cover;
 
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
+        filter: grayscale(100%);
         background-image: url("../img/montage-tablet@2x.png");
       }
     }
@@ -298,13 +302,14 @@
       height: 100%;
       position: absolute;
       background-image: url("../img/accessories-tablet@1x.png");
-      filter: opacity(30%);
+      filter: grayscale(100%);
       background-repeat: repeat;
       background-position: top center;
       background-size: cover;
 
       @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
+        filter: grayscale(100%);
         background-image: url("../img/accessories-tablet@2x.png");
       }
     }
