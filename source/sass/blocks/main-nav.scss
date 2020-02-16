@@ -6,7 +6,7 @@
 
 .main-nav-wrapper {
   box-sizing: border-box;
-  width: 1490px;
+  min-width: 1490px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 36px;
@@ -111,7 +111,9 @@ box-sizing: border-box;
 @media (max-width: $tablet-width) {
   .main-nav-wrapper {
     min-height: 52px;
+    min-width: 720px;
   }
+
 
   .main-nav__list {
     display: flex;
@@ -123,15 +125,15 @@ box-sizing: border-box;
     width: 153px;
 
     &--mail::before {
-      top: 52px;
-      right: 300px;
+      top: 37px;
+      right: 296px;
       width: 26px;
       height: 19px;
     }
 
     &--phone::before {
-      top: 50px;
-      right: 240px;
+      top: 34px;
+      right: 238px;
       width: 25px;
       height: 24px;
     }

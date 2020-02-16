@@ -30,7 +30,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-height: 45px;
   margin: 20px 0 0 7px;
   padding: 0;
   list-style: none;
@@ -56,7 +55,7 @@
 }
 
 .accordion-menu__submenuItems {
-  height: 100px;
+  min-height: 100px;
   list-style: none;
   color: rgba(27, 45, 55, 0.5);
   font-family: 'PT Mono', monospace;
@@ -72,30 +71,7 @@
 }
 
 .accordion-menu__submenuItems-item{
-  &--about {
     margin-right: 73px;
-  }
-  &--products {
-    margin-right: 73px;
-  }
-  &--production {
-    margin-right: 73px;
-  }
-  &--montage {
-    margin-right: 73px;
-  }
-
-  &--accessories {
-    margin-bottom: -24px;
-  }
-
-  &--delivery {
-    margin-bottom: -21px;
-  }
-
-  &--contacts {
-    margin-bottom: 25px;
-  }
 }
 
 /**
@@ -103,7 +79,48 @@
 * FOOTER-MIDDLE  tablet
  * ===========================================================
 */
-@media (max-width: $tablet-width) {}
+@media (max-width: $tablet-width) {
+  .footer-middle {
+    width: 721px;
+    padding: 0;
+  }
+
+  .accordion-menu {
+    width: 721px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    margin-top: 5px;
+  padding: 0 10px;
+    list-style: none;
+
+  }
+
+  .accordion-menu__item--office {
+    margin: 0;
+    margin-left: 193px;
+    padding: 0;
+  }
+
+  .accordion-menu__item-header {
+    margin-bottom: 25px;
+  }
+
+  .accordion-menu__submenuItems {
+    min-height: 187px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .accordion-menu__submenuItems-item {
+    margin: 0;
+  }
+}
 
 /**
  * ===========================================================

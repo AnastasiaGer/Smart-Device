@@ -85,7 +85,34 @@
 * FOOTER-TOP  tablet
  * ===========================================================
 */
-@media (max-width: $tablet-width) {}
+@media (max-width: $tablet-width) {
+  .footer-top {
+    width: 721px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 18px 20px 0 10px;
+    margin: 0;
+    position: relative;
+  }
+
+  .footer-logo__title {
+    margin: 0;
+      margin-left: 82px;
+      margin-top: 11px;
+  }
+
+  .footer-logo__tip {
+    margin: 0 0 58px 83px;
+  }
+
+  .page-footer__social {
+    position: absolute;
+    top: 38px;
+    right: -33px;
+  }
+}
 
 /**
  * ===========================================================

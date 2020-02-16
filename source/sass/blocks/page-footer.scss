@@ -32,12 +32,12 @@
 @media (max-width: $tablet-width) {
   .page-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
     margin-bottom: 40px;
 
-    padding: 46px 20px 0 22px;
+    padding: 0;
 
     width: $tablet-width;
   }

@@ -59,6 +59,10 @@
   line-height: 22.5px;
 }
 
+.about-tip span{
+  display: inline;
+}
+
 .about-btn {
   margin-top: 39px;
   display: inline-block;
@@ -90,10 +94,11 @@
 @media (max-width: $tablet-width) {
   .about {
       width: $tablet-width;
+      margin: 0 auto 84px;
   }
   .about-header {
     margin: 0;
-    margin: 30px 0 5px 340px;
+    margin: 27px 0 5px 210px;
     font-size: 32px;
 font-weight: 400;
 line-height: 45px;
@@ -101,22 +106,15 @@ line-height: 45px;
 
   .about__container {
     width: 532px;
-    margin-left: 200px;
+    margin-left: 213px;
     position: relative;
   }
 
   .about__container::before {
-    content: "";
-    position: absolute;
-    top: -45px;
-    left: -175px;
+    top: -44px;
+    left: -185px;
     width: 132px;
     height: 348px;
-    background-image: url("../img/image-2005.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    z-index: 100;
   }
 
   .about-tip {
@@ -124,27 +122,13 @@ line-height: 45px;
     margin-top: 18px;
   }
 
+  .about-tip span{
+    display: none;
+  }
+
   .about-btn {
-    margin-top: 38px;
-    display: inline-block;
+    margin-top: 44px;
     padding: 10px 50px 11px 49px;
-    color: #00b2ff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 1px solid #00b2ff;
-
-    &:hover {
-      color: #ffffff;
-    }
-
-    &:active {
-      color: #ffffff;
-    }
   }
 }
 

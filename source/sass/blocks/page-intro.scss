@@ -5,10 +5,6 @@
 */
 .page-intro-wrapper {
   padding: 0;
-  background-color: #1b2931;
-  background-image: url("../img/bg2.png");
-  background-repeat: repeat;
-  background-position: top center;
 }
 
 .page-intro {
@@ -50,6 +46,10 @@
   font-weight: 700;
   letter-spacing: 5.6px;
   text-transform: uppercase;
+}
+
+.page-intro__header br{
+display: none;
 }
 
 .page-intro__tip {
@@ -115,17 +115,26 @@
  * ===========================================================
 */
 @media (max-width: $tablet-width) {
+  .page-intro {
+  padding-bottom: 293px;
+  }
   .page-intro__banner {
     position: absolute;
-    top: 138px;
-    right: 520px;
+    top: 13px;
+    right: 516px;
     width: 465px;
     height: 340px;
   }
 
+  .page-intro__header br{
+    display: inline;
+    }
+
   .page-intro__header {
-    margin: 0 0 61px 34px;
-    padding-top: 233px;
+    font-style: normal;
+
+    margin: 0 0 3px 88px;
+    padding-top: 113px;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 4.2px;

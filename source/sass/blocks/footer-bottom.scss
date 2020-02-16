@@ -14,8 +14,8 @@
   border-top: 1px solid rgba(98, 105, 98, 0.2);
 }
 
-.footer-bottom__tip{
-  color: rgba(27,45,55, 0.5);
+.footer-bottom__tip {
+  color: rgba(27, 45, 55, 0.5);
   font-family: 'PT Mono', monospace;
   font-size: 13px;
   font-weight: 400;
@@ -26,9 +26,11 @@
   &--rights {
     margin-right: 74px;
   }
+
   &--years {
     margin-right: 143px;
   }
+
   &--wow {
     margin-right: 5px;
   }
@@ -38,7 +40,7 @@
   cursor: pointer;
   display: inline;
   text-decoration: none;
-  color: rgba(27,45,55, 0.5);
+  color: rgba(27, 45, 55, 0.5);
   font-family: 'PT Mono', monospace;
   font-size: 13px;
   font-weight: 400;
@@ -53,11 +55,11 @@
   }
 
   &:hover {
-    color:#000000;
+    color: #000000;
   }
 
   &:active {
-    color:#c4baba;
+    color: #c4baba;
   }
 }
 
@@ -66,11 +68,45 @@
 * FOOTER-BOTTOM  tablet
  * ===========================================================
 */
-@media (max-width: $tablet-width) {}
+@media (max-width: $tablet-width) {
+  .footer-bottom {
+    margin: 21px 0 0 0;
+    position: relative;
+  }
+
+  .footer-bottom__tip {
+    &--rights {
+      display: none;
+    }
+
+    &--years {
+      position: absolute;
+      top: -364px;
+    left: 328px;
+    }
+
+    &--wow {
+      margin: 19px 0 0 5px;
+    }
+  }
+
+  .page-footer__link {
+    margin: 19px 305px 0 20px;
+    padding: 0;
+
+    &--wow {
+      margin: 0;
+    }
+  }
+}
 
 /**
  * ===========================================================
 * FOOTER-BOTTOM  mobile
 * ===========================================================
 */
-@media (max-width: $mobile-width) {}
+@media (max-width: $mobile-width) {
+  .footer-bottom {
+    margin: 21px 0 0px 29px;
+  }
+}
