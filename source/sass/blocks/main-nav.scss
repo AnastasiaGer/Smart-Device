@@ -6,7 +6,7 @@
 
 .main-nav-wrapper {
   box-sizing: border-box;
-  min-width: 1490px;
+  width: 1490px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 36px;
@@ -25,10 +25,6 @@
   font-family: "PT Mono", monospace;
   font-size: 16px;
   font-weight: 400;
-
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-position: center;
 }
 
 .main-nav__list {
@@ -111,7 +107,7 @@ box-sizing: border-box;
 @media (max-width: $tablet-width) {
   .main-nav-wrapper {
     min-height: 52px;
-    min-width: 720px;
+    width: 720px;
   }
 
 
@@ -152,14 +148,19 @@ box-sizing: border-box;
   @media (max-width: $mobile-width) {
     .main-nav-wrapper {
       box-sizing: border-box;
-      width: 290px;
-      margin-right: auto;
-      margin-left: auto;
+      width: 100%;
       padding: 0 26px;
     }
 
-    .main-nav {
-      margin: 0 auto;
-      padding: 0;
+    .main-nav__item {
+      &--mail::before {
+        top: 25px;
+        left: 195px;
+      }
+
+      &--phone::before {
+        top: 23px;
+        left: 240px;
+      }
     }
   }

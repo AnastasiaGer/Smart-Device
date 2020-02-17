@@ -8,7 +8,7 @@
   flex-direction: column;
 
   margin-bottom: 40px;
-  padding: 20px 20px 0 22px;
+  padding-top: 20px;
 }
 
 .footer-logo {
@@ -19,7 +19,7 @@
   position: absolute;
 
   top: 0;
-  left: 14px;
+  left: 0;
 
   width: 52px;
   height: 52px;
@@ -29,9 +29,8 @@
   font-family:  "Roboto Condensed", "Arial", sans-serif;
   font-size: 25px;
   font-weight: 700;
-  margin: 0;
-    margin-left: 82px;
-    margin-top: 11px;
+
+  margin: 11px 0 0 68px;
 }
 
 .footer-logo__tip {
@@ -39,7 +38,7 @@
   font-family:  "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 500;
-  margin: 0 0 58px 83px;
+  margin: 0 0 63px 68px;
 }
 
 
@@ -47,7 +46,6 @@
   vertical-align: top;
 
   width: 156px;
-  margin-left: 10px;
 }
 
 .social-links {
@@ -59,7 +57,7 @@
 
   display: inline-block;
 
-  margin: 0 13px;
+  margin: 0 11px;
 
   font-size: 0;
 }

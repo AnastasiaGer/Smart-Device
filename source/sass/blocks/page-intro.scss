@@ -48,8 +48,8 @@
   text-transform: uppercase;
 }
 
-.page-intro__header br{
-display: none;
+.page-intro__header br {
+  display: none;
 }
 
 .page-intro__tip {
@@ -116,8 +116,9 @@ display: none;
 */
 @media (max-width: $tablet-width) {
   .page-intro {
-  padding-bottom: 293px;
+    padding-bottom: 293px;
   }
+
   .page-intro__banner {
     position: absolute;
     top: 13px;
@@ -126,9 +127,9 @@ display: none;
     height: 340px;
   }
 
-  .page-intro__header br{
+  .page-intro__header br {
     display: inline;
-    }
+  }
 
   .page-intro__header {
     font-style: normal;
@@ -180,4 +181,58 @@ display: none;
 * PAGE INTRO mobile
 * ===========================================================
 */
-@media (max-width: $mobile-width) {}
+@media (max-width: $mobile-width) {
+  .page-intro {
+    padding-top: 105px;
+    padding-bottom: 5px;
+  }
+
+  .page-intro__banner {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 301px;
+    height: 220px;
+  }
+
+  .page-intro__header br {
+    display: inline;
+  }
+
+  .page-intro__header {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    margin: 0 0 3px 10px;
+  }
+
+  .page-intro__tip {
+    margin: 0;
+    width: 245px;
+    margin: 0 0 57px 65px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.09px;
+    position: relative;
+  }
+
+  .page-intro__tip br {
+    display: none;
+  }
+
+  .page-intro__tip::before {
+    top: 17px;
+    left: -45px;
+    width: 33px;
+    height: 2px;
+  }
+
+  .btn-intro {
+    margin-left: 0;
+  }
+
+
+  .page-intro__scroll {
+    /*display: none;*/
+  }
+}
