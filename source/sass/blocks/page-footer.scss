@@ -20,6 +20,7 @@
   padding-top: 46px;
   background-color: #fafafa;
   width: 1412px;
+  padding: 64px 255px 0 253px;
   margin: 0 auto;
 
 }
@@ -48,4 +49,15 @@
 * PAGE-FOOTER  mobile
 * ===========================================================
 */
-@media (max-width: $mobile-width) {}
+@media (max-width: $mobile-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 5px 15px;
+
+    width: 287px;
+  }
+}

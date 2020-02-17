@@ -183,14 +183,13 @@
 */
 @media (max-width: $mobile-width) {
   .page-intro {
-    padding-top: 105px;
-    padding-bottom: 5px;
+    padding-bottom: 150px;
   }
 
   .page-intro__banner {
     position: absolute;
-    top: 13px;
-    left: 16px;
+    top: -127px;
+    left: 12px;
     width: 301px;
     height: 220px;
   }
@@ -203,7 +202,8 @@
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2.8px;
-    margin: 0 0 3px 10px;
+    margin: 0 0 3px 0;
+    padding-top: 80px;
   }
 
   .page-intro__tip {

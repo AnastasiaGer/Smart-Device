@@ -107,6 +107,32 @@
 */
 @media (max-width: $mobile-width) {
   .footer-bottom {
-    margin: 21px 0 0px 29px;
+    width: 319px;
+    margin: 21px 0 0px 0;
+  }
+
+  .footer-bottom__tip {
+    &--rights {
+      display: none;
+    }
+
+    &--years {
+      position: absolute;
+      top: -364px;
+    left: 328px;
+    }
+
+    &--wow {
+      margin: 19px 0 0 5px;
+    }
+  }
+
+  .page-footer__link {
+    margin: 19px 305px 0 20px;
+    padding: 0;
+
+    &--wow {
+      margin: 0;
+    }
   }
 }

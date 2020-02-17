@@ -117,4 +117,35 @@
 * FOOTER-TOP  mobile
 * ===========================================================
 */
-@media (max-width: $mobile-width) {}
+@media (max-width: $mobile-width) {
+  .footer-top {
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 60px;
+    margin: 0;
+    position: relative;
+  }
+  .footer-logo__img {
+  top: 23px;
+    left: 37px;
+  }
+
+  .footer-logo__title {
+    margin: 33px 0 0 105px;
+  }
+
+  .footer-logo__tip {
+    margin: 0 0 58px 107px;
+  }
+
+  .page-footer__social {
+    position: absolute;
+    top: 184px;
+    right: 74px;
+  }
+}

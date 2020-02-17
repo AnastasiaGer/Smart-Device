@@ -18,11 +18,11 @@
   text-decoration: none;
 
   &:hover {
-    color:#000000;
+    color: #000000;
   }
 
   &:active {
-    color:#c4baba;
+    color: #c4baba;
   }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .accordion-menu__submenuItems {
-  height: 96px;
+  height: 100px;
   list-style: none;
   color: rgba(27, 45, 55, 0.5);
   font-family: 'PT Mono', monospace;
@@ -74,8 +74,8 @@
   flex-wrap: wrap;
 }
 
-.accordion-menu__submenuItems-item{
-    margin-right: 73px;
+.accordion-menu__submenuItems-item {
+  margin-right: 73px;
 }
 
 /**
@@ -96,7 +96,7 @@
     justify-content: flex-start;
     margin: 0;
     margin-top: 5px;
-  padding: 0 10px;
+    padding: 0 10px;
     list-style: none;
 
   }
@@ -131,11 +131,31 @@
 * ===========================================================
 */
 @media (max-width: $mobile-width) {
+  .footer-middle {
+    width: 287px;
+    padding: 0;
+  }
+
   .accordion-menu {
     width: 100%;
     max-width: 350px;
     margin: 60px auto 20px;
     background: #fff;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .accordion-menu__item {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+
+    &--office {
+      margin: 0;
+      margin-left: 0;
+      padding: 0;
+      border-top: none;
+    }
   }
 
   .accordion-menu li.open .accordion-menu__item-header {
@@ -152,8 +172,8 @@
 
   .accordion-menu__item-header {
     display: block;
-    padding: 15px 15px 15px 45px;
-
+    padding: 15px 15px 15px 0;
+    margin: 0;
     border-bottom: 1px solid #ccc;
 
     position: relative;
