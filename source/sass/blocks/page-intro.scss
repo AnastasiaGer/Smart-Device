@@ -14,19 +14,18 @@
   width: 1490px;
 }
 
-.page-intro::before {
+.page-intro:after {
   content: "";
   position: absolute;
-  width: 705px;
-  height: 515px;
-  left: 400px;
-  top: 80px;
-  background-image: url("../img/dotts-desktop.png");
+  top: -142px;
+right: -195px;
+  width: 1920px;
+  height: 950px;
+  background-image: url("../img/dotts.svg");
   background-repeat: no-repeat;
-  opacity: 1;
-
-  z-index: inherit;
-
+      background-position: top center;
+      background-size: cover;
+      z-index: 10;
 }
 
 .page-intro__banner {
@@ -35,6 +34,7 @@
   right: -40px;
   width: 705px;
   height: 515px;
+  z-index: 1000;
 }
 
 .page-intro__header {
@@ -126,6 +126,7 @@
     width: 465px;
     height: 340px;
   }
+
 
   .page-intro__header br {
     display: inline;

@@ -18,6 +18,21 @@
   margin: 0 auto;
 }
 
+.advantages:after {
+  content: "";
+  position: absolute;
+  top: 925px;
+right: 760px;
+  width: 872px;
+  height: 873px;
+  background-image: url("../img/tr-big.svg");
+  background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      z-index: 10;
+      transform: rotate(120deg);
+}
+
 .advantages__list {
   display: flex;
   flex-direction: row;
@@ -44,6 +59,7 @@
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 2px solid #00b2ff;
+  z-index: 1000;
 
   &:hover {
     background-color: #00b2ff;

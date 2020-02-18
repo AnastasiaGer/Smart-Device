@@ -100,7 +100,7 @@ DialogForm.addEventListener('submit', function (event) {
 // Скрипт плавного перехода к нужному блоку
 
 var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-  animationTime = 1800,
+  animationTime = 1500,
   framesCount = 20;
 
 anchors.forEach(function (item) {
