@@ -16,21 +16,22 @@
   width: 1170px;
   padding: 112px 375px 48px 375px;
   margin: 0 auto;
+  z-index: 1000;
 }
 
 .advantages:after {
   content: "";
   position: absolute;
   top: 925px;
-right: 760px;
+  right: 760px;
   width: 872px;
   height: 873px;
   background-image: url("../img/tr-big.svg");
   background-repeat: no-repeat;
-      background-position: top center;
-      background-size: cover;
-      z-index: 10;
-      transform: rotate(120deg);
+  background-position: top center;
+  background-size: cover;
+  z-index: 10;
+  transform: rotate(120deg);
 }
 
 .advantages__list {
@@ -41,6 +42,36 @@ right: 760px;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+
+.advantages__list:before {
+  content: "";
+  position: absolute;
+  top: 820px;
+  right: 1700px;
+  width: 336px;
+  height: 324px;
+  background-image: url("../img/tr-small.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 10;
+  transform: rotate(0deg);
+}
+
+.advantages__list:after {
+  content: "";
+  position: absolute;
+  top: 1215px;
+  right: 280px;
+  width: 336px;
+  height: 324px;
+  background-image: url("../img/tr-small.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 10;
+  transform: rotate(-60deg);
 }
 
 .advantages__item {
@@ -60,6 +91,8 @@ right: 760px;
   border: 1px solid #ebebeb;
   border-left: 2px solid #00b2ff;
   z-index: 1000;
+
+  &--deadlines:before {}
 
   &:hover {
     background-color: #00b2ff;
