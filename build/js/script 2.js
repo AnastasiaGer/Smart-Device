@@ -135,37 +135,23 @@ anchors.forEach(function (item) {
 
 // Аккордион
 
+$('.accordion-item .heading').on('click', function (e) {
+  e.preventDefault();
 
-$(function () {
-  var Accordion = function (el, multiple) {
-    this.el = el || {};
-    // more then one submenu open?
-    this.multiple = multiple || false;
+  // Add the correct active class
+  if ($(this).closest('.accordion-item').hasClass('active')) {
+    // Remove active classes
+    $('.accordion-item').removeClass('active');
+  } else {
+    // Remove active classes
+    $('.accordion-item').removeClass('active');
 
-    var dropdownlink = this.el.find('.accordion-menu__item-header');
-    dropdownlink.on('click', {
-      el: this.el,
-      multiple: this.multiple
-    },
-    this.dropdown);
-  };
+    // Add the active class
+    $(this).closest('.accordion-item').addClass('active');
+  }
 
-  Accordion.prototype.dropdown = function (e) {
-    var $el = e.data.el,
-      $this = $(this),
-      // this is the ul.submenuItems
-      $next = $this.next();
-
-    $next.slideToggle();
-    $this.parent().toggleClass('open');
-
-    if (!e.data.multiple) {
-      // show only one menu at the same time
-      $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
-    }
-  };
-
-  // eslint-disable-next-line no-unused-vars
-  var accordion = new Accordion($('.accordion-menu'), false);
-  // eslint-disable-next-line semi
-})
+  // Show the content
+  var $content = $(this).next();
+  $content.slideToggle(100);
+  $('.accordion-item .content').not($content).slideUp('fast');
+});
